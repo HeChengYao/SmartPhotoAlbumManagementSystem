@@ -18,12 +18,100 @@ h5 {
 }
 
 .navbar {
-    background-color: var(--mycolor03);
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
 }
 
 .nav-link {
-    color: #ffffff !important;
+    color: white !important;
+    margin: 0 10px;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3s ease;
 }
+
+cssCopy.navbar {
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 10px;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-nav .nav-item {
+    animation: fadeInDown 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+.navbar-nav .nav-item:nth-child(1) { animation-delay: 0.1s; }
+.navbar-nav .nav-item:nth-child(2) { animation-delay: 0.2s; }
+.navbar-nav .nav-item:nth-child(3) { animation-delay: 0.3s; }
+.navbar-nav .nav-item:nth-child(4) { animation-delay: 0.4s; }
+.navbar-nav .nav-item:nth-child(5) { animation-delay: 0.5s; }
 
 .card-title {
     color: var(--mycolor02);
@@ -32,11 +120,6 @@ h5 {
 footer {
     background-color: var(--mycolor01);
 }
-
-/* .carousel-item img {
-    height: 800px;
-    object-fit: cover;
-} */
 
 @media (max-width: 768px) {
     .carousel-item img {
