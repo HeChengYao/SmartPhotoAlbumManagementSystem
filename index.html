@@ -326,17 +326,22 @@
     </section>
 
     <!-- section 08 新增圖片至連結資料庫 -->
-    <section id="s08" class="py-5" style="background-color: var(--mycolor02);">
+    <section id="s08" class="py-5">
         <div class="container">
-            <h2 class="text-center text-white wow animate__fadeInDown">上傳照片</h2>
-            <div class="row">
-                <div class="col-12 col-lg-12 wow animate__fadeInDown" data-wow-delay="0.5s">
-                    <div class="card bg-light mb-3">
-                        <div class="card-body">
-                            <input type="file" id="upload-input" multiple>
-                            <input type="text" id="tags-input" placeholder="標籤 (用逗號分隔)">
-                            <button id="upload-button">確定上傳</button>
+            <h2 class="text-center mb-5 wow animate__fadeInDown">上傳照片</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 wow animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="upload-card">
+                        <div class="upload-area" id="dropZone">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>拖放文件到此處或點擊選擇文件</p>
+                            <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
                         </div>
+                        <div id="imagePreview" class="mt-4"></div>
+                        <div class="form-group mt-4">
+                            <input type="text" id="tagsInput" class="form-control" placeholder="輸入標籤 (用逗號分隔)">
+                        </div>
+                        <button id="uploadButton" class="btn btn-primary mt-4">上傳照片</button>
                     </div>
                 </div>
             </div>
@@ -357,6 +362,54 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const imagePreview = document.getElementById('imagePreview');
+        const uploadButton = document.getElementById('uploadButton');
+
+        dropZone.addEventListener('click', () => fileInput.click());
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.style.backgroundColor = '#e6f2ff';
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.style.backgroundColor = '';
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.style.backgroundColor = '';
+            handleFiles(e.dataTransfer.files);
+        });
+
+        fileInput.addEventListener('change', () => {
+            handleFiles(fileInput.files);
+        });
+
+        function handleFiles(files) {
+            imagePreview.innerHTML = '';
+            for (let file of files) {
+                if (file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        imagePreview.appendChild(img);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            }
+        }
+
+        uploadButton.addEventListener('click', () => {
+            // 在這裡實現上傳邏輯
+            alert('上傳功能尚未實現');
         });
     });
 </script>

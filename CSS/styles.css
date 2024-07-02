@@ -18,13 +18,13 @@ h5 {
 }
 
 .navbar {
-    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
     padding: 15px 0;
     transition: all 0.3s ease;
 }
 
 .navbar.scrolled {
-    background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
     padding: 10px 0;
 }
 
@@ -43,13 +43,13 @@ h5 {
 }
 
 cssCopy.navbar {
-    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
     padding: 15px 0;
     transition: all 0.3s ease;
 }
 
 .navbar.scrolled {
-    background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
     padding: 10px 0;
 }
 
@@ -96,6 +96,7 @@ cssCopy.navbar {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -107,11 +108,25 @@ cssCopy.navbar {
     opacity: 0;
 }
 
-.navbar-nav .nav-item:nth-child(1) { animation-delay: 0.1s; }
-.navbar-nav .nav-item:nth-child(2) { animation-delay: 0.2s; }
-.navbar-nav .nav-item:nth-child(3) { animation-delay: 0.3s; }
-.navbar-nav .nav-item:nth-child(4) { animation-delay: 0.4s; }
-.navbar-nav .nav-item:nth-child(5) { animation-delay: 0.5s; }
+.navbar-nav .nav-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.navbar-nav .nav-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.navbar-nav .nav-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.navbar-nav .nav-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.navbar-nav .nav-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
 
 .card-title {
     color: var(--mycolor02);
@@ -193,13 +208,13 @@ h2 {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #s01 p {
     font-size: 1.5rem;
     margin-bottom: 30px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .cta-button {
@@ -211,13 +226,13 @@ h2 {
     border-radius: 30px;
     font-size: 1.2rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes fadeInUp {
@@ -225,6 +240,7 @@ h2 {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -261,13 +277,13 @@ h2 {
     border: none;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .photo-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .photo-card img {
@@ -299,6 +315,7 @@ h2 {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -335,7 +352,7 @@ h2 {
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     text-align: center;
     padding: 30px;
@@ -343,7 +360,7 @@ h2 {
 
 .member-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .member-img {
@@ -412,6 +429,110 @@ h2 {
         opacity: 0;
         transform: translateY(20px);
     }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.wow.animate__fadeInUp {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+#s08 {
+    background-color: #f8f9fa;
+}
+
+#s08 h2 {
+    font-size: 2.5rem;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#s08 h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #007bff;
+}
+
+.upload-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.upload-area {
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    background-color: #f0f8ff;
+}
+
+.upload-area i {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.upload-area p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+#imagePreview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#imagePreview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#tagsInput {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#uploadButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+#uploadButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
     to {
         opacity: 1;
         transform: translateY(0);
