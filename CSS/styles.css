@@ -1,0 +1,61 @@
+:root {
+    --mycolor01: #003366;
+    --mycolor02: #0052cc;
+    --mycolor03: #007bff;
+    --mycolor04: #3399ff;
+    --mycolor05: #80bfff;
+    --greekgetaway01: #fff7e6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h5 {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.navbar {
+    background-color: var(--mycolor03);
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.card-title {
+    color: var(--mycolor02);
+}
+
+footer {
+    background-color: var(--mycolor01);
+}
+
+.carousel-item img {
+    height: 800px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+section .custom-img {
+    width: 30% !important;
+    /* 這將確保三張圖片能夠並排顯示 */
+    height: 350px !important;
+    object-fit: cover !important;
+    /* 這將保持圖片比例並填滿指定的尺寸 */
+}

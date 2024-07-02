@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+body{
+    font-family: "Noto Sans TC", "sans-serif";
+}
+.fw100{
+    font-weight: 100;
+}
+.fw200{
+    font-weight: 200;
+}
+.fw300{
+    font-weight: 300;
+}
+.fw400{
+    font-weight: 400;
+}
+.fw500{
+    font-weight: 500;
+}
+.fw600{
+    font-weight: 600;
+}
+.fw700{
+    font-weight: 700;
+}
+.fw800{
+    font-weight: 800;
+}
+.fw900{
+    font-weight: 900;
+}
+
+:root{
+    --mycolor01:#a6c2ce;
+    --mycolor02:#9c8f96;
+    --mycolor03:#ebc57c;
+    --mycolor04:#6b799e;
+
+    --icestone01:#1e94a0;
+    --icestone02:#004e6d;
+    --icestone03:#fec0c1;
+    --icestone04:#dc2543;
+
+    --greekgetaway01:#eb8f90;
+    --greekgetaway02:#ffb471;
+    --greekgetaway03:#adbed2;
+    --greekgetaway04:#12406a;
+
+    --soothing01:#bed3d4;
+    --soothing02:#e8caa4;
+    --soothing03:#a1b872;
+    --soothing04:#e5d67b;
+}
+
+@media screen and (max-width: 768px) {
+    .table-rwd thead{
+        display: none;
+    }
+    .table-rwd tbody tr{
+        display: block;
+        border: 2px solid var(--mycolor01);
+        margin-top: 3px;
+    }
+    .table-rwd tbody tr td{
+        display: block;
+        overflow: hidden;
+    }
+    .table-rwd tbody tr td::before{
+        content: attr(data-th)"：";
+        color: var(--mycolor03);
+        font-size: 18px;
+        font-weight: 900;
+        display: block;
+        float: left;
+        /* width: 15%; */
+        width: 4em;
+        text-align: right;
+        padding-right: 0.3em;
+    }
+    .table-rwd tbody tr td span.table-col{
+        display: block;
+        float: left;
+        /* width: 85%; */
+        width: calc(100% - 4.5em);
+    }
+}
+.bg-cover {
+    background-position: center center;
+    background-size: cover;
+}
