@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>智慧型家族相冊管理系統</title>
+    <title>智慧型時光記憶相冊管理系統</title>
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/animate.min.css">
@@ -18,7 +18,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">相冊管理系統</a>
+            <a class="navbar-brand" href="#">智慧型時光記憶相冊管理系統</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#s07">灰喵喵</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#search">搜尋</a>
+                    </li>
                 </ul>
+                <form class="d-flex ms-auto" action="/search" method="GET">
+                    <input class="form-control me-2" type="search" placeholder="搜尋照片或標籤" aria-label="Search"
+                        name="query">
+                    <button class="btn btn-outline-primary" type="submit">搜尋</button>
+                </form>
             </div>
         </div>
     </nav>
@@ -48,9 +56,9 @@
     <!-- section 01 -->
     <section id="s01" class="vh-100">
         <div class="container">
-            <h1 class="wow animate__fadeInDown fadeInUp">歡迎來到智慧型相冊管理系統</h1>
+            <h1 class="wow animate__fadeInDown fadeInUp">歡迎來到時光記憶相冊</h1>
             <p class="lead wow animate__fadeInUp fadeInUp" data-wow-delay="0.5s">輕鬆管理並分享照片和回憶</p>
-            <a href="#s04" class="cta-button wow animate__fadeInUp fadeInUp" data-wow-delay="1s">開始探索</a>
+            <a href="#s04" class="cta-button wow animate__fadeInUp fadeInUp" data-wow-delay="1s">開始回憶</a>
         </div>
     </section>
 
