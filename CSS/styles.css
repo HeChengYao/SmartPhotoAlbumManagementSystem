@@ -53,20 +53,6 @@ cssCopy.navbar {
     padding: 10px 0;
 }
 
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.nav-link {
-    color: white !important;
-    margin: 0 10px;
-    padding: 5px 0;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
 .nav-link::after {
     content: '';
     position: absolute;
@@ -308,18 +294,6 @@ h2 {
 
 .photo-card .card-text {
     color: #666;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .wow.animate__fadeInUp {
