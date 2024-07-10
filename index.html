@@ -41,14 +41,95 @@
                         <a class="nav-link" href="#s07">灰喵喵</a>
                     </li>
                 </ul>
-                <form class="d-flex ms-auto" action="/search" method="GET">
+                <form class="d-flex ms-auto mt-2" action="/search" method="GET">
                     <input class="form-control me-1" type="search" placeholder="搜尋照片或標籤" aria-label="Search"
                         name="query">
                     <button class="btn btn-outline-primary" type="submit">搜尋</button>
                 </form>
+                <button class="btn btn bg-warning m-2" data-bs-toggle="modal" data-bs-target="#loginModal">登入</button>
+                <button class="btn btn bg-success" data-bs-toggle="modal" data-bs-target="#registModal">註冊</button>
             </div>
         </div>
     </nav>
+
+    <!-- loginModal 登入按鈕-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h1 class="modal-title fs-5 text-white fw600" id="exampleModalLabel">會員登入</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="" class="form-label">帳號</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">密碼</label>
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- registModal 註冊按鈕-->
+    <div class="modal fade" id="registModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-success">
+                    <h1 class="modal-title fs-5 text-white fw600" id="exampleModalLabel">會員註冊</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row timeline-section">
+                        <div class="col-6">
+                            <div class="h3 fw900 text-center">會員守則</div>
+                            <p>守則1</p>
+                            <p>守則2</p>
+                            <p>守則3</p>
+                            <p>守則4</p>
+                            <div class="h3 fw900 text-center">會員權益</div>
+                            <p>權益1</p>
+                            <p>權益2</p>
+                            <p>權益3</p>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" name="" id="">
+                                <label for="" class="form-check-label">同意</label>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">帳號</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">密碼</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">確認密碼</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">email</label>
+                                <input type="email" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- section 01 -->
     <section id="s01" class="vh-100">
