@@ -42,12 +42,16 @@
                     </li>
                 </ul>
                 <form class="d-flex ms-auto mt-2" action="/search" method="GET">
-                    <input class="form-control me-1" type="search" placeholder="搜尋照片或標籤" aria-label="Search"
+                    <input class="form-control me-2" type="search" placeholder="搜尋照片或標籤" aria-label="Search"
                         name="query">
                     <button class="btn btn-outline-primary" type="submit">搜尋</button>
                 </form>
-                <button class="btn btn bg-warning m-2" data-bs-toggle="modal" data-bs-target="#loginModal">登入</button>
-                <button class="btn btn bg-success" data-bs-toggle="modal" data-bs-target="#registModal">註冊</button>
+                <div class="m-2">
+                    <button class="btn btn bg-warning m-1" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">登入</button>
+                    <button class="btn btn bg-success m-1" data-bs-toggle="modal"
+                        data-bs-target="#registModal">註冊</button>
+                </div>
             </div>
         </div>
     </nav>
